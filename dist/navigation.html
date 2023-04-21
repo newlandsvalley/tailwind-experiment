@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="text-blue-600">
+         
+      <!-- navigation -->
+      <nav class="text-green-200 relative bg-green-950 ">
+           <ul class="hidden sm:flex justify-between items-center" >
+            <!-- left hand navigation bar big screens -->
+            <div class="hidden relative sm:flex justify-between space-x-8 py-1 pl-6" >
+              <li class= "hover:text-white transition ease-in delay-150" >
+                <a href="">home</a>
+              </li>
+              <li class= "hover:text-white  transition ease-in delay-150" >
+                <a href="">genre</a>
+              </li>
+              <li class= "hover:text-white transition ease-in delay-150 ">
+                <a href="">upload</a>
+              </li>
+              <li class= "hover:text-white  transition ease-in delay-150" >
+                <a href="">users</a>
+              </li>
+              <li class= "hover:text-white  transition ease-in delay-150">
+                <a href="">metronome</a>
+              </li>
+              <li class= "hover:text-white  transition ease-in delay-150" >
+                <a href="">editor</a>
+              </li>
+            </div>
+            <!-- right hand navigation bar big screens-->
+            <div class="hidden sm:flex justify-end space-x-8 py-1 pr-6">                 
+              <li class= "hover:text-white  transition ease-in delay-150" >
+                  <a href="">register</a>
+              </li>
+              <li class= "hover:text-white  transition ease-in delay-150" >
+                <a href="">login</a>
+              </li>              
+            </div>
+           </ul> 
+           <!-- Application name and hamburger menu icon for mobiles -->
+           <ul class="hamburger flex sm:hidden justify-between space-x-8 py-1 px-6 items-center">
+            <li>
+              <text class="flex">tradtunedb</text>
+            </li>
+            <li class="justify-end" >
+              <button id="hamburger-btn" class="mt-2">
+                <svg class= "" viewBox="0 0 100 80" width="40" height="20">
+                  <rect width="80" height="10" fill="white"></rect> 
+                  <rect y="30" width="80" height="10" fill="white"></rect>
+                  <rect y="60" width="80" height="10" fill="white"></rect>
+                </svg>
+              </button>
+            </li>
+           </ul>
+        <!-- mobile menu -->
+        <div class = "sm:hidden text-green-700">
+          <ul id="hamburger-menu" class="absolute flex flex-col items-center self-center py-8 font-bold
+                    space-y-2 bg-white left-6 right-6 w-auto drop-shadow-md">
+
+            <li class= "hover:text-green-400 transition ease-in delay-150" >
+              <a href="">home</a>
+            </li>
+            <li class= "hover:text-green-400 transition ease-in delay-150" >
+              <a href="">genre</a>
+            </li>
+            <li class= "hover:text-green-400 transition ease-in delay-150 ">
+              <a href="">upload</a>
+            </li>
+            <li class= "hover:text-green-400  transition ease-in delay-150" >
+              <a href="">users</a>
+            </li>
+            <li class= "hover:text-green-400  transition ease-in delay-150">
+              <a href="">metronome</a>
+            </li>
+            <li class= "hover:text-green-400  transition ease-in delay-150" >
+              <a href="">editor</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+    <script src="glue.js"></script>
+</body>
+</html>
