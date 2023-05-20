@@ -9,6 +9,10 @@ module.exports = {
       colors: {
         lightolive: '#cccc99',
         darkergreen: '#669966',
+        palegray: '#f1f1f1',
+      },
+      spacing: {
+        '120': '30rem',
       },
     },
   },

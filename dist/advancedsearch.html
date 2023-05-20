@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Search</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src='main.js'></script>
+</head>
+<body class="text-blue-950 font-sans">
+    
+</body>
+  <div class="flex">
+    <form action="" class="mx-auto w-120 overflow-hidden" >
+        <fieldset class="border-solid border-black bg-palegray mt-4">
+            <legend class="mb-2 ml-4 px-4  bg-darkergreen text-xl text-blue-900 border-2 border-neutral-400 shadow-xl">Advanced Search</legend>
+   
+            <div class="mx-2 mt-1">
+              <p class="">You can use any of the following search terms: <b>title, rhythm, composer, key, origin, source, submitter, 
+                transcriber, abc </b>and join them together with <b>&</b>.
+              </p>
+              </div>
+
+            <div class="mt-2 inline-block text-lg"> 
+              <label for="name" class="w-32 pr-3 float-left text-right">criteria:</label>
+              <input type="text" id="criteria" class="bg-yellow-50 inline float-left w-80 border-2 border-black text-black">
+            </div>
+
+            <div>
+                <button class="hoverable ml-5 mb-3 mt-2" >search</button>
+            </div>
+        </fieldset>
+        <div class="">
+        <p class="">invalid search criteria</p>
+        </div>
+        <div class="my-2">
+        <p class="text-xl">some example searches:</p>
+        </div>
+        <div>
+          <p></p>
+          <dl>
+             <div class="text-xl">
+                <dt class="w-48 float-left font-bold ml-4 text-blue-900">title=sligo</dt>
+                <dd class="inline">'sligo' in the tune name</dd>
+             </div>
+             <div class="text-xl">
+                <dt class="w-48 float-left font-bold ml-4 text-blue-900">rhythm=slig jig</dt>
+                <dd class="inline">slip jigs</dd>
+             </div>
+          </dl>
+        </div>
+    </form>
+  </div>
+</html>
