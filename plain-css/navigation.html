@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="">
+         
+      <!-- navigation -->
+      <nav class="nav" >
+           <ul class="main-menu"  >
+            <!-- left hand navigation bar big screens -->
+            <div class="navdiv"  >
+              <li class="navli" >
+                <a href="">home</a>
+              </li>
+              <li class="navli" classt= "hover:text-white  transition ease-in delay-150" >
+                <a href="">genre</a>
+              </li>
+              <li class="navli"  classt= "hover:text-white transition ease-in delay-150 ">
+                <a href="">upload</a>
+              </li>
+              <li class="navli" classt= "hover:text-white  transition ease-in delay-150" >
+                <a href="">users</a>
+              </li>
+              <li class="navli"  classt= "hover:text-white  transition ease-in delay-150">
+                <a href="">metronome</a>
+              </li>
+              <li class="navli"  classt= "hover:text-white  transition ease-in delay-150" >
+                <a href="">editor</a>
+              </li>
+            </div>
+            <!-- right hand navigation bar big screens-->
+            <div  class="navdiv" classt="hidden sm:flex justify-end space-x-8 py-1 pr-6">                 
+              <li class="navli"  classt= "hover:text-white  transition ease-in delay-150" >
+                  <a href="">register</a>
+              </li>
+              <li class="navli"  classt= "hover:text-white  transition ease-in delay-150" >
+                <a href="">login</a>
+              </li>              
+            </div>
+           </ul> 
+           <!-- Application name and hamburger menu icon for mobiles -->
+           <ul class="hamburger-nav" classt="hamburger flex sm:hidden justify-between space-x-8 py-1 px-6 items-center">
+            <li class="hamburger-appname" >
+              <text  classt="flex">tradtunedb</text>
+            </li>
+            <li class="hamburger-icon" >
+              <button class="hamburger-btn" id = "hamburger-btn" classt="mt-2">
+                  <svg class= "hamburger-lines" id="hamburger-lines" viewBox="0 0 80 80" width="40" height="20">
+                    <rect width="80" height="10" fill="white"></rect> 
+                    <rect y="30" width="80" height="10" fill="white"></rect>
+                    <rect y="60" width="80" height="10" fill="white"></rect>
+                  </svg>
+                  <svg class="hamburger-cross hidden" id="hamburger-cross" viewBox="0 0 80 80" width="40" height="20" >
+                    <line x1="10" y1="10" x2="80" y2="80" stroke="white" stroke-width="10" />
+                    <line x1="80" y1="10" x2="10" y2="80" stroke="white" stroke-width="10" />
+                  </svg>
+              </button>
+            </li>
+           </ul>
+        <!-- mobile menu -->
+        <div  classt = "sm:hidden text-green-700">
+          <ul class="hamburger-menu" id="hamburger-menu" tclass="absolute flex flex-col items-center self-center py-8 font-bold
+                    space-y-2 bg-white left-6 right-6 w-auto drop-shadow-md">
+
+            <li class="mobnavli" classt= "hover:text-green-400 transition ease-in delay-150" >
+              <a href="">home</a>
+            </li>
+            <li class="mobnavli" classt= "hover:text-green-400 transition ease-in delay-150" >
+              <a href="">genre</a>
+            </li>
+            <li class="mobnavli" classt= "hover:text-green-400 transition ease-in delay-150 ">
+              <a href="">upload</a>
+            </li>
+            <li class="mobnavli" classt= "hover:text-green-400  transition ease-in delay-150" >
+              <a href="">users</a>
+            </li>
+            <li class="mobnavli" classt= "hover:text-green-400  transition ease-in delay-150">
+              <a href="">metronome</a>
+            </li>
+            <li class="mobnavli" classt= "hover:text-green-400  transition ease-in delay-150" >
+              <a href="">editor</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+    <script src="glue.js"></script>
+</body>
+</html>

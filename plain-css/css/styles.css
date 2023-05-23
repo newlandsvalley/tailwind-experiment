@@ -1,0 +1,116 @@
+
+
+.nav {
+    color: #cccc99; /* light greenish grey */
+}
+
+.navdiv {
+    display: flex;
+}
+
+/* the navigation default (small screens) is just the app name and the hamburger icon */
+.hamburger-nav {
+    display: flex;
+    background-color: #224422; /* hard dark green */
+    color: #cccc99; /* light greenish grey */
+	list-style-type: none;  /* don't display the bullets in the nav bar */
+    height: 40px;
+    padding-top: 10px;
+}
+
+.hamburger-navdiv {
+    display: flex;
+}
+
+.hamburger-appname {
+    font-size: 1.5em;
+}
+
+.hamburger-icon {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.hamburger-btn {
+    background-color: #224422; /* hard dark green */
+}
+
+.hamburger-btn-cross {
+    background-color: #224422; /* hard dark green */
+}
+
+/* don't display the main navigation bar on default small screens */
+.main-menu {
+    background-color: #224422; /* hard dark green */
+	overflow: hidden;
+    display: none;
+	list-style-type: none;  /* don't display the bullets in the nav bar */
+    height: 40px;
+}
+
+/* don't display the hamburger menu by default - it needs to be switched on */
+.hamburger-menu {
+    display: none;
+	list-style-type: none;  /* don't display the bullets in the nav bar */
+    flex-direction: column;
+    font-weight: bold;
+}
+
+/* links in the navigation bar big screens */
+.navli>a {
+    color: #cccc99; /* light greenish grey */
+    display: inline;
+    margin: 0 10px 0 10px;
+    font-size: 1.5em;
+    text-decoration: none;    
+    transition-delay: 250ms;
+    transition-timing-function: ease-in-out;
+} 
+
+/* links in the navigation bar mobile screens */
+.mobnavli>a {
+    color: #224422; /* hard dark green */
+    display: inline;
+    margin: 0 10px 0 10px;
+    font-size: 1.5em;
+    text-decoration: none;    
+    transition-delay: 250ms;
+    transition-timing-function: ease-in-out;
+}
+
+.navli>a:hover {
+    color: white;
+}
+
+.mobnavli>a:hover {
+    color: #cccc99; /* light greenish grey */
+}
+
+/* allow visibility on mobile devices to be toggled easily.  This hides the display  */
+.hidden {
+    display: none;
+}
+
+/* allow visibility on mobile devices to be toggled easily.  This shows the display in flex mode */
+.flex {
+    display: flex;
+}
+
+
+@media (min-width: 600px) {
+    .hamburger-menu {
+      display: none;
+    }
+
+    .hamburger-nav {
+      display: none
+    }
+
+    .main-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    
+  }
