@@ -8,7 +8,7 @@ const hamburgerLines = document.getElementById('hamburger-lines')
 
 hamburgerBtn.addEventListener('click', () => {
     console.log("hamburger button clicked");
-    // the menu toggles bewteen being hidden and being in flex display
+    // the menu toggles between being hidden and being in flex display
     hamburgerMenu.classList.toggle('flex');
     hamburgerMenu.classList.toggle('hidden');
     // the hamburger icon toggles between lines and a cross

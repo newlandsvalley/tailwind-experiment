@@ -4,6 +4,7 @@
     color: #cccc99; /* light greenish grey */
 }
 
+/* the children of this div separate the LHS and RHS elements.  Separate them with flex. */
 .navdiv {
     display: flex;
 }
@@ -18,6 +19,7 @@
     padding-top: 10px;
 }
 
+/* the hamburger navigation div element for small screens */
 .hamburger-navdiv {
     display: flex;
 }
@@ -26,15 +28,19 @@
     font-size: 1.5em;
 }
 
+/* set the hamburger icon towards the RHS of the bar */
 .hamburger-icon {
     margin-left: auto;
     margin-right: 20px;
+    padding-top: 6px;
 }
 
+/* hamburger menu activation */
 .hamburger-btn {
     background-color: #224422; /* hard dark green */
 }
 
+/* hamburger menu deactivation */
 .hamburger-btn-cross {
     background-color: #224422; /* hard dark green */
 }
@@ -48,7 +54,7 @@
     height: 40px;
 }
 
-/* don't display the hamburger menu by default - it needs to be switched on */
+/* don't display the hamburger menu by default - it needs to be switched on by the icon*/
 .hamburger-menu {
     display: none;
 	list-style-type: none;  /* don't display the bullets in the nav bar */
@@ -67,7 +73,7 @@
     transition-timing-function: ease-in-out;
 } 
 
-/* links in the navigation bar mobile screens */
+/* links in the navigation bar small (mobile) screens */
 .mobnavli>a {
     color: #224422; /* hard dark green */
     display: inline;
@@ -96,7 +102,7 @@
     display: flex;
 }
 
-
+/* on larger screems, deactivate the hamburger stuff and activate the normal navigation bar */
 @media (min-width: 600px) {
     .hamburger-menu {
       display: none;
